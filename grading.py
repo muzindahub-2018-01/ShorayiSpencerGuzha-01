@@ -1,4 +1,8 @@
+import os
 # This is a mark grading system 
+
+def clear_screen():
+    os.system('cls' if os.name== 'nt' else 'clear')
 
 #This is the mark input
 mark=int(input(' Please Enter Your Mark: \n'))
@@ -24,3 +28,4 @@ elif mark<0:
 else :
     print('Sorry! You are failed')
 
+clear_screen()
